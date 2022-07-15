@@ -1,0 +1,23 @@
+### User create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Wallace",
+  "email": "wallace@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "wallace@example.com",
+  "password": "password"
+}
+
+### user show
+GET http://localhost:3000/user.json
+Authorization: Bearer "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc5MzIwNTR9.OuCnLzmPeokr_UpuROmAk-OjCzbkQlfoHMqsjd5E4Xc"
